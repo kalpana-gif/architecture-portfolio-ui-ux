@@ -33,11 +33,11 @@ const Footer = () => {
                 <div className="grid md:grid-cols-2 gap-10">
                     <div>
                         <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                            Building <span className="text-amber">tomorrow</span>, today.
+                            <span className="text-amber font-orbitron"> Building </span><span className="text-amber font-architect">tomorrow</span>, today.
                         </h2>
                         <a
                             href="mailto:hello@arch.com"
-                            className="inline-block px-8 py-4 border border-white/20 rounded-full text-lg hover:bg-forest hover:border-forest transition-all duration-300"
+                            className="inline-block px-8 py-4 border border-white/20 rounded-full text-lg hover:bg-amber hover:border-amber transition-all duration-300 font-architect"
                         >
                             Start a Project
                         </a>
@@ -64,7 +64,7 @@ const Footer = () => {
                 {/* Bottom Section */}
                 <div className="flex flex-col md:flex-row items-center justify-between pt-10 border-t border-white/10 mt-10">
                     <div className="flex items-center gap-2 mb-4 md:mb-0">
-                        <div className="w-2 h-2 bg-forest rounded-full animate-pulse" />
+                        <div className="w-2 h-2 bg-amber rounded-full animate-pulse" />
                         <span className="text-sm text-stone">IST {time}</span>
                     </div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
 
                     <button
                         onClick={scrollToTop}
-                        className="p-3 bg-white/5 rounded-full hover:bg-forest transition-all duration-300 group mt-4 md:mt-0"
+                        className="p-3 bg-white/5 rounded-full hover:bg-amber transition-all duration-300 group mt-4 md:mt-0"
                         aria-label="Back to top"
                     >
                         <ArrowUp className="w-5 h-5 group-hover:-translate-y-1 transition-transform" />

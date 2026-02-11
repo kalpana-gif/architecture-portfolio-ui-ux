@@ -28,7 +28,7 @@ const Navbar = () => {
         >
             <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
                 {/* Logo */}
-                <a href="#" className="text-2xl font-bold font-display tracking-tight hover:text-forest transition-colors text-dark">
+                <a href="#" className="text-2xl font-bold font-display tracking-tight hover:text-amber transition-colors text-dark">
                     ARCH<span className="text-amber">.</span>
                 </a>
 
@@ -38,14 +38,14 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-sm uppercase tracking-widest font-medium text-stone hover:text-forest transition-colors"
+                            className="text-sm uppercase tracking-widest font-medium text-stone hover:text-amber transition-colors"
                         >
                             {link.name}
                         </a>
                     ))}
                     <a
                         href="mailto:hello@arch.com"
-                        className="px-6 py-2 border border-dark/10 rounded-full text-sm uppercase tracking-widest hover:bg-forest hover:text-white hover:border-forest transition-all duration-300 text-dark"
+                        className="px-6 py-2 border border-dark/10 rounded-full text-sm uppercase tracking-widest hover:bg-amber hover:text-white hover:border-amber transition-all duration-300 text-dark"
                     >
                         Inquire
                     </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-dark hover:text-forest transition-colors"
+                    className="md:hidden text-dark hover:text-amber transition-colors"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -73,7 +73,7 @@ const Navbar = () => {
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-2xl font-display font-bold text-dark hover:text-forest transition-colors"
+                                className="text-2xl font-display font-bold text-dark hover:text-amber transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
@@ -81,7 +81,7 @@ const Navbar = () => {
                         ))}
                         <a
                             href="mailto:hello@arch.com"
-                            className="px-8 py-3 border border-forest rounded-full text-lg font-display text-white bg-forest hover:bg-forest/90 transition-all duration-300"
+                            className="px-8 py-3 border border-amber rounded-full text-lg font-display text-white bg-amber hover:bg-amber/90 transition-all duration-300"
                             onClick={() => setIsOpen(false)}
                         >
                             Inquire

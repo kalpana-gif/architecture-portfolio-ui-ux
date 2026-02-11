@@ -29,7 +29,7 @@ const Capabilities = () => {
     return (
         <section id="philosophy" className="py-24 bg-dark text-nude relative overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-[20%] right-0 w-[500px] h-[500px] bg-forest/20 rounded-full blur-[120px] pointer-events-none" />
+            <div className="absolute top-[20%] right-0 w-[500px] h-[500px] bg-amber/20 rounded-full blur-[120px] pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <motion.div
@@ -39,7 +39,7 @@ const Capabilities = () => {
                     className="mb-20"
                 >
                     <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
-                        Design <span className="text-amber">Philosophy</span>
+                        Design <span className="text-amber font-architect">Philosophy</span>
                     </h2>
                     <p className="text-stone max-w-xl text-lg font-light leading-relaxed">
                         Architecture is more than building; it's about crafting experiences that resonate with the human spirit and the natural world.
@@ -59,8 +59,8 @@ const Capabilities = () => {
                             <div className="mb-6 text-amber group-hover:scale-110 transition-transform duration-300">
                                 {item.icon}
                             </div>
-                            <h3 className="text-xl font-bold font-display mb-4 text-nude">{item.title}</h3>
-                            <p className="text-stone text-sm leading-relaxed">
+                            <h3 className="text-xl font-orbitron mb-4 text-nude">{item.title}</h3>
+                            <p className="text-stone text-sm font-architect leading-relaxed">
                                 {item.description}
                             </p>
                         </motion.div>

@@ -19,7 +19,7 @@ const Contact = () => {
     return (
         <section id="contact" className="py-32 bg-dark text-nude relative">
             {/* Background Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-dark to-forest/10 pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-b from-dark to-amber/10 pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="grid lg:grid-cols-2 gap-20">
@@ -30,9 +30,9 @@ const Contact = () => {
                     >
                         <span className="font-architect text-amber text-xl tracking-wide block mb-4">— Get in Touch</span>
                         <h2 className="text-6xl md:text-8xl font-display font-bold mb-8 leading-tight">
-                            Let's Start a <br /> <span className="text-stone">Project</span>.
+                            Let's<span className="text-amber"> Start</span> a <br /> <span className="text-stone">Project</span>.
                         </h2>
-                        <p className="text-stone text-xl max-w-lg leading-relaxed mb-12 font-light">
+                        <p className="text-stone text-xl max-w-lg leading-relaxed mb-12 font-architect">
                             Have a vision in mind? We'd love to hear about it. Whether it's a new build, a renovation, or just a conversation about design.
                         </p>
 

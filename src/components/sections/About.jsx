@@ -54,7 +54,7 @@ const About = () => {
                         Tharaka Kasun
                     </h2>
 
-                    <p className="text-2xl font-architect text-forest mb-10">
+                    <p className="text-2xl font-architect text-amber mb-10">
                         Interior Designer & Spatial Innovator
                     </p>
 
@@ -63,7 +63,7 @@ const About = () => {
                             <span className="text-amber font-bold">10+ years</span> transforming concepts into award-worthy spaces across hospitality, commercial, and residential sectors.
                         </p>
                         <p>
-                            From <span className="text-forest">sketch to reality</span>—specializing in 3D visualization, complete spatial planning, and meticulous execution of projects valued at <span className="font-bold">500M+ LKR</span>.
+                            From <span className="text-amber">sketch to reality</span>—specializing in 3D visualization, complete spatial planning, and meticulous execution of projects valued at <span className="font-bold">500M+ LKR</span>.
                         </p>
                         <p className="text-dark font-bold text-xl">
                             "Design with precision. Build with passion."
@@ -77,7 +77,7 @@ const About = () => {
                             <div className="text-stone/60 text-sm">University of Moratuwa</div>
                         </div>
                         <div>
-                            <div className="text-forest font-bold mb-1">Experience</div>
+                            <div className="text-amber font-bold mb-1">Experience</div>
                             <div className="text-stone/70">Project Coordinator</div>
                             <div className="text-stone/60 text-sm">Since 2014</div>
                         </div>

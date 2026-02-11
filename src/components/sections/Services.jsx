@@ -38,7 +38,7 @@ const Services = () => {
                     <div>
                         <span className="font-architect text-amber text-xl tracking-wide block mb-4">— What We Do</span>
                         <h2 className="text-5xl md:text-7xl font-display font-bold text-dark">
-                            Our <span className="text-forest">Services</span>
+                            Our <span className="text-amber font-orbitron">Services</span>
                         </h2>
                     </div>
                     <p className="text-stone max-w-md text-lg leading-relaxed">
@@ -62,19 +62,14 @@ const Services = () => {
                                 </span>
                             </div>
                             <div className="md:col-span-4">
-                                <h3 className="text-3xl md:text-4xl font-display font-bold text-dark group-hover:text-forest transition-colors">
+                                <h3 className="text-3xl md:text-4xl font-orbitron font-bold text-dark group-hover:text-amber transition-colors">
                                     {service.title}
                                 </h3>
                             </div>
                             <div className="md:col-span-5">
-                                <p className="text-stone text-lg leading-relaxed font-light">
+                                <p className="text-stone text-lg leading-relaxed font-architect">
                                     {service.description}
                                 </p>
-                            </div>
-                            <div className="md:col-span-1 flex justify-end">
-                                <div className="p-3 rounded-full border border-dark/10 text-dark group-hover:bg-dark group-hover:text-white transition-all duration-300 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0">
-                                    <ArrowUpRight size={20} />
-                                </div>
                             </div>
                         </motion.div>
                     ))}
