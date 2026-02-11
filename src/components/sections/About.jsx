@@ -25,7 +25,7 @@ const About = () => {
                     <div className="relative z-10 p-4 bg-white shadow-xl rotate-1">
                         <div className="aspect-[4/5] bg-stone/5 overflow-hidden relative">
                             <img
-                                src="src/assets/profile-photo.png"
+                                src="../../assets/profile-photo.jpeg"
                                 alt="Architect Portrait"
                                 className="w-full h-full object-cover grayscale opacity-90 hover:opacity-100 transition-opacity duration-700 contrast-125"
                             />
