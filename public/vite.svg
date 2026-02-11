@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+    <g fill="#FF8F00">
+        <!-- Left leg -->
+        <polygon points="300,80 120,520 200,520 300,250" />
+        <!-- Right leg -->
+        <polygon points="300,80 480,520 400,520 300,250" />
+        <!-- Crossbar -->
+        <rect x="220" y="340" width="160" height="60" />
+    </g>
+</svg>

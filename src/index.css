@@ -1,0 +1,41 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+:root {
+  /* Architectural Palette */
+  --color-background: #F5F5F0;
+  /* Nude / Warm White */
+  --color-text: #1C1917;
+  /* Warm Black / Dark Stone */
+  --color-accent: #3F6212;
+  /* Forest Green */
+  --color-highlight: #D97706;
+  /* Amber */
+  --color-secondary: #78716C;
+  /* Stone Gray */
+
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  /* Headings default */
+  line-height: 1.6;
+  font-weight: 400;
+
+  color-scheme: light;
+  /* Default to light for architectural vibe */
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
