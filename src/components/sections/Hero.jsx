@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 import TextReveal from '../ui/TextReveal';
+import TextTypewriter from '../ui/TextTypewriter';
 
 const Hero = () => {
     const { scrollY } = useScroll();
@@ -21,8 +22,8 @@ const Hero = () => {
             {/* Content */}
             <div className="max-w-7xl mx-auto w-full relative z-10">
                 <h1 className="text-6xl md:text-9xl font-display font-bold leading-[0.9] tracking-tighter text-dark mb-8">
-                    <TextReveal className="block">DESIGNING</TextReveal>
-                    <TextReveal className="block text-amber" delay={0.2}>SPACES.</TextReveal>
+                    <TextTypewriter className="block font-orbitron">DESIGNING</TextTypewriter>
+                    <TextReveal className="block  font-architect text-amber" delay={0.2}>SPACES.</TextReveal>
                 </h1>
 
                 <motion.p
