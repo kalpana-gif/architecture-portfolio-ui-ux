@@ -84,7 +84,7 @@ const Marquee = ({ speed = 25 }) => {
             <div className="max-w-7xl mx-auto px-6 mb-12 flex items-end justify-between">
                 <div>
                     <span className="font-architect text-amber text-xl tracking-wide block mb-2">— Selected Works</span>
-                    <h2 className="text-5xl md:text-7xl font-bold font-orbitron tracking-tighter text-dark">
+                    <h2 className="text-4xl md:text-7xl font-bold font-orbitron tracking-tighter text-dark">
                         PROJECT<span className="text-amber">S</span>
                     </h2>
                 </div>

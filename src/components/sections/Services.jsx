@@ -27,7 +27,7 @@ const services = [
 
 const Services = () => {
     return (
-        <section id="services" className="py-32 bg-nude text-dark relative">
+        <section id="services" className="py-32 bg-nude text-dark relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -37,7 +37,7 @@ const Services = () => {
                 >
                     <div>
                         <span className="font-architect text-amber text-xl tracking-wide block mb-4">— What We Do</span>
-                        <h2 className="text-5xl md:text-7xl font-display font-bold text-dark">
+                        <h2 className="text-4xl md:text-7xl font-display font-bold text-dark">
                             Our <span className="text-amber font-orbitron">Services</span>
                         </h2>
                     </div>

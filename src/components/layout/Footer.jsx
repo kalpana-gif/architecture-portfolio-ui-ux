@@ -32,7 +32,7 @@ const Footer = () => {
                 {/* Top Section */}
                 <div className="grid md:grid-cols-2 gap-10">
                     <div>
-                        <h2 className="text-4xl md:text-6xl font-display font-bold mb-6">
+                        <h2 className="text-3xl md:text-6xl font-display font-bold mb-6">
                             <span className="text-amber font-orbitron"> Building </span><span className="text-amber font-architect">tomorrow</span>, today.
                         </h2>
                         <a

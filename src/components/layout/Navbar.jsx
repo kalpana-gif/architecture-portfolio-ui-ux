@@ -14,6 +14,17 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'unset';
+        }
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, [isOpen]);
+
     const navLinks = [
         { name: 'Work', href: '#work' },
         { name: 'Philosophy', href: '#philosophy' },
@@ -53,7 +64,7 @@ const Navbar = () => {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden text-dark hover:text-amber transition-colors"
+                    className="md:hidden text-dark hover:text-amber transition-colors z-50 relative"
                     onClick={() => setIsOpen(!isOpen)}
                 >
                     {isOpen ? <X size={28} /> : <Menu size={28} />}
@@ -64,16 +75,15 @@ const Navbar = () => {
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ opacity: 0, y: -20 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
-                        className="absolute top-24 left-0 w-full bg-nude/95 backdrop-blur-xl border-b border-stone/10 md:hidden flex flex-col items-center py-10 gap-8"
+                        className="fixed inset-0 top-0 bg-nude w-full h-screen z-40 flex flex-col items-center justify-center gap-8 md:hidden"
                     >
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="text-2xl font-display font-bold text-dark hover:text-amber transition-colors"
+                                className="text-4xl font-display font-bold text-dark hover:text-amber transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {link.name}
@@ -81,7 +91,7 @@ const Navbar = () => {
                         ))}
                         <a
                             href="mailto:hello@arch.com"
-                            className="px-8 py-3 border border-amber rounded-full text-lg font-display text-white bg-amber hover:bg-amber/90 transition-all duration-300"
+                            className="px-10 py-4 border border-amber rounded-full text-xl font-display text-white bg-amber hover:bg-amber/90 transition-all duration-300 mt-4"
                             onClick={() => setIsOpen(false)}
                         >
                             Inquire

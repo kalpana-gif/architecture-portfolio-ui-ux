@@ -17,7 +17,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-32 bg-dark text-nude relative">
+        <section id="contact" className="py-32 bg-dark text-nude relative overflow-hidden">
             {/* Background Gradient */}
             <div className="absolute inset-0 bg-gradient-to-b from-dark to-amber/10 pointer-events-none" />
 
@@ -29,7 +29,7 @@ const Contact = () => {
                         viewport={{ once: true }}
                     >
                         <span className="font-architect text-amber text-xl tracking-wide block mb-4">— Get in Touch</span>
-                        <h2 className="text-6xl md:text-8xl font-display font-bold mb-8 leading-tight">
+                        <h2 className="text-5xl md:text-8xl font-display font-bold mb-8 leading-tight">
                             Let's<span className="text-amber"> Start</span> a <br /> <span className="text-stone">Project</span>.
                         </h2>
                         <p className="text-stone text-xl max-w-lg leading-relaxed mb-12 font-architect">
@@ -57,7 +57,7 @@ const Contact = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="bg-white/5 p-10 md:p-14 backdrop-blur-sm border border-white/5"
+                        className="bg-white/5 p-6 md:p-14 backdrop-blur-sm border border-white/5"
                     >
                         <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
                             <div className="space-y-2">

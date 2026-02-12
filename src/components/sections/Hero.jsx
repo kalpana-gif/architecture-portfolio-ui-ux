@@ -21,9 +21,9 @@ const Hero = () => {
 
             {/* Content */}
             <div className="max-w-7xl mx-auto w-full relative z-10">
-                <h1 className="text-6xl md:text-9xl font-display font-bold leading-[0.9] tracking-tighter text-dark mb-8">
+                <h1 className="text-4xl md:text-9xl font-display font-bold leading-[0.9] tracking-tighter text-dark mb-8 break-words">
                     <TextTypewriter className="block font-orbitron">DESIGNING</TextTypewriter>
-                    <TextReveal className="block  font-architect text-amber" delay={0.2}>SPACES.</TextReveal>
+                    <TextReveal className="block font-architect text-amber" delay={0.2}>SPACES.</TextReveal>
                 </h1>
 
                 <motion.p

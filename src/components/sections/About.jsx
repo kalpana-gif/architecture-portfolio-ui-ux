@@ -12,7 +12,7 @@ const About = () => {
 
             <Marquee speed={40} />
 
-            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-20 items-center mt-24 relative z-10">
+            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 md:gap-20 items-center mt-12 md:mt-24 relative z-10">
                 <motion.div
                     initial={{ opacity: 0, rotate: -2 }}
                     whileInView={{ opacity: 1, rotate: 0 }}
